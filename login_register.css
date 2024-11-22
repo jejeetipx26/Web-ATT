@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --color-text: #cdc6c3;
+    --hover-color: #70efbf;
+    --neon-box-shadow: 0 0 .5rem #70efbf;
+}
+
+body {
+    font-family: 'Roboto Serif', Arial, sans-serif;
+    background-image: url("./img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--color-text);
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.container h2 {
+    color: var(--hover-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container label {
+    text-align: left;
+    font-size: 0.9rem;
+    color: var(--color-text);
+}
+
+.container input {
+    padding: 10px;
+    border: 1px solid var(--hover-color);
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.container input:focus {
+    outline: none;
+    border-color: var(--hover-color);
+    box-shadow: var(--neon-box-shadow);
+}
+
+.container button {
+    background: linear-gradient(180deg, #70efbf 0%, #21e69e 100%);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #003763;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container button:hover {
+    background: linear-gradient(180deg, #70efbf 0%, #21e69a 100%);
+    box-shadow: var(--neon-box-shadow);
+}
+
+.container a {
+    display: block;
+    margin-top: 1rem;
+    color: var(--hover-color);
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.container a:hover {
+    color: #fff;
+}

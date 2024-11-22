@@ -1,7 +1,6 @@
-@import url(
-    'https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,40 +9,41 @@
     list-style: none;
 }
 
-:root{
+:root {
     --color-text: #cdc6c3;
     --hover-color: #70efbf;
     --neon-box-shadow: 0 0 .5rem #70efbf;
     --index: calc(1vw + 1vh);
 }
 
-::-webkit-scrollbar{
-    height:0;
+::-webkit-scrollbar {
+    height: 0;
     width: .5rem;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background: #000;
 }
-::-webkit-scrolbar-thumb{
+
+::-webkit-scrolbar-thumb {
     background: var(--hover-color);
     border-radius: 5rem;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("./img/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
     overflow-x: hidden;
 }
 
-a{
+a {
     color: #fff;
 }
 
-header{
+header {
     position: fixed;
     left: 0;
     top: 0;
@@ -55,7 +55,7 @@ header{
     z-index: 1000;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
@@ -64,21 +64,21 @@ header{
     color: var(--hover-color);
 }
 
-.logo img{
+.logo img {
     max-width: 100%;
     width: 40px;
     height: auto;
 }
 
-header .navlist{
+header .navlist {
     display: flex;
 }
 
-.navlist li{
+.navlist li {
     margin: 0 1.5rem;
 }
 
-.navlist li .nav-item{
+.navlist li .nav-item {
     position: relative;
     padding: 17px 0;
     font-weight: 500;
@@ -86,10 +86,11 @@ header .navlist{
     transition: all .2s ease;
 }
 
-.navlist li .nav-item:hover{
+.navlist li .nav-item:hover {
     color: var(--hover-color);
 }
-.navlist li .nav-item::before{
+
+.navlist li .nav-item::before {
     content: "";
     position: absolute;
     left: 0;
@@ -101,21 +102,21 @@ header .navlist{
     transition: all .3s ease;
 }
 
-.navlist li .nav-item:hover::before{
+.navlist li .nav-item:hover::before {
     width: 100%;
 }
 
-.navlist li .active{
+.navlist li .active {
     color: var(--hover-color);
-    border-bottom: 1px solid var(--hover-color);  
+    border-bottom: 1px solid var(--hover-color);
 }
 
-.right-side{
+.right-side {
     display: flex;
     align-items: center;
 }
 
-.mybtn{
+.mybtn {
     background: linear-gradient(180deg, #70efbf 0, #21e69e 100%);
     height: 28px;
     line-height: 28px;
@@ -129,34 +130,34 @@ header .navlist{
     color: #003763;
 }
 
-.mybtn:hover{
+.mybtn:hover {
     background: linear-gradient(180deg, #70efbf 0, #21e69a 100%);
     box-shadow: 0 3px 9px #25b981;
 }
 
-#menu-icon{
+#menu-icon {
     color: var (--hover-color);
     font-size: 2.5rem;
     display: none;
 }
 
-section{
-    padding: 100px 12%;  
+section {
+    padding: 100px 12%;
 }
 
 /* home section css */
-.home-img img.hero{
+.home-img img.hero {
     max-width: 100%;
     width: 400px;
     height: auto;
     animation: floatImg 4s ease-in-out infinite;
 }
 
-.planet-rotate{
+.planet-rotate {
     width: 100%;
 }
 
-.planet-rotate img.planet{
+.planet-rotate img.planet {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -166,7 +167,8 @@ section{
     width: calc(var(--index)*45);
     animation: rotate 300s infinite linear;
 }
-.home{
+
+.home {
     height: 100vh;
     display: grid;
     align-items: center;
@@ -175,44 +177,47 @@ section{
     width: 100%;
 }
 
-.home-text h1, h2{
+.home-text h1,
+h2 {
     font-size: calc(var(--index)*2);
     margin-bottom: 1rem;
     font-weight: 800;
     text-shadow: 1px 1px 1px #474747;
 }
 
-.home-text .mybtn{
+.home-text .mybtn {
     margin-top: 1rem;
     height: 35px;
-    line-height: 35px; 
+    line-height: 35px;
 }
 
-span{
+span {
     color: var(--hover-color);
 }
-.home-img{
+
+.home-img {
     position: relative;
 
 }
-img.moon-light{
+
+img.moon-light {
     position: absolute;
     left: 0;
     mix-blend-mode: screen;
     width: 90px;
 }
 
-.char-btn .mybtn{
+.char-btn .mybtn {
     height: 40px;
-    line-height: 40px;
+    line-height: 40px;
 }
 
 /* flight lis css */
-.flight-list{
+.flight-list {
     position: relative;
 }
 
-.flight-list .container{
+.flight-list .container {
     margin-top: 6rem;
     display: flex;
     justify-content: center;
@@ -221,20 +226,19 @@ img.moon-light{
     position: relative;
 }
 
-.container .flight-box{
+.container .flight-box {
     width: 200px;
     padding: 2rem 1.5rem 2rem;
     text-align: center;
-    background-image: url(img/cardBg.jpg); /beri gambar/
-    background-position: center;
+    background-image: url(img/cardBg.jpg); background-position : center;
     background-size: cover;
     border-radius: 10px;
     color: #fff;
     z-index: 2;
-    margin: 2rem.5rem;  
+    margin: 2rem.5rem;
 }
 
-.flight-box img{
+.flight-box img {
     width: 120px;
     margin: -4rem auto 0 auto;
     animation: floatImg 6s ease-in-out infinite;
@@ -242,20 +246,20 @@ img.moon-light{
     border-radius: 50%;
 }
 
-.container .flight-box h2{
+.container .flight-box h2 {
     color: var(--hover-color);
     font-size: 1.5rem;
     font-weight: 700;
     margin: 0;
 }
 
-.flight-box p{
+.flight-box p {
     color: #dddcdc;
     line-height: 1.5rem;
     font-size: .9rem;
 }
 
-.flight-box .mybtn{
+.flight-box .mybtn {
     margin-top: 1rem;
     height: 32px;
     line-height: 32px;
@@ -265,47 +269,47 @@ img.moon-light{
 }
 
 /* Character section css */
-.char .flight-box{
+.char .flight-box {
     text-align: left;
     width: 210px;
 }
 
-.char .flight-box img{
+.char .flight-box img {
     animation: none;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
-     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     filter: none;
 }
 
-.char .flight-box .title{
+.char .flight-box .title {
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 1px;
     margin: 5px 0;
 }
 
-.char .flight-box .price{
+.char .flight-box .price {
     color: var(--hover-color);
     font-size: 20px;
     font-weight: 600;
 }
 
-.char-btn{
+.char-btn {
     text-align: center;
     margin-top: 2rem;
 }
 
-.char-btn .mybtn{
+.char-btn .mybtn {
     height: 40px;
     line-height: 40px;
 }
 
 /* experience section css */
-.experience .img-mission{
+.experience .img-mission {
     width: 300px;
 }
 
-.experience .circle-animate{
+.experience .circle-animate {
     position: absolute;
     left: 27%;
     width: 150px;
@@ -313,7 +317,7 @@ img.moon-light{
 }
 
 /* footer section css */
-footer{
+footer {
     width: 100%;
     height: auto;
     background: rgba(0, 0, 0, 0.7);
@@ -322,67 +326,67 @@ footer{
     border-top: 1px solid #561389;
 }
 
-.container-foot{
+.container-foot {
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-gap: 1rem;
 }
 
-.container-foot .leftBox .social-media{
+.container-foot .leftBox .social-media {
     display: flex;
 }
 
-.container-foot .title{
+.container-foot .title {
     font-size: 1.5rem;
     color: var(--hover-color);
     font-weight: 600;
 }
 
-.leftBox p{
+.leftBox p {
     padding: 15px 0;
     line-height: 1.5rem;
 }
 
-.social-media{
+.social-media {
     font-size: 1.5rem;
 }
 
-.social-media a:hover{
+.social-media a:hover {
     color: var(--hover-color);
 }
 
-.social-media li{
+.social-media li {
     margin-right: 1rem;
 }
 
-.quick-menu li{
+.quick-menu li {
     margin-top: 1rem;
 }
 
-.quick-menu li a:hover{
+.quick-menu li a:hover {
     color: var(--hover-color);
 }
 
-.info li span{
+.info li span {
     display: flex;
     align-items: center;
     margin: 1rem 1rem 1rem 0;
     column-gap: 5px;
 }
 
-.copyRight{
+.copyRight {
     padding: 1.5rem 12%;
     width: 100%;
     display: flex;
     justify-content: space-between;
     color: #fff;
     background: rgba(0, 0, 0, 0.7);
-    border-top: 1px solid rgba(117,117,117,0.3);
+    border-top: 1px solid rgba(117, 117, 117, 0.3);
     align-items: center;
 }
 
-.copyRight a{
+.copyRight a {
     display: inline-flex;
     align-items: center;
     background: var(--hover-color);
@@ -390,45 +394,46 @@ footer{
     padding: 10px;
     color: #000;
 }
-header.sticky{
+
+header.sticky {
     background: rgba(0, 0, 0, 0.7);
     padding: 9px 12%;
     border-bottom: 1px solid #3e0e62;
 }
 
 /* scroll animation */
-.scroll-left{
+.scroll-left {
     opacity: 0;
     transform: translateX(20px);
 }
 
-.show-items{
+.show-items {
     opacity: 1;
     transform: translateX(0);
     transition: all 2s;
 }
 
-.scroll-right{
+.scroll-right {
     opacity: 0;
     transform: translateX(-40px);
 }
 
-.scroll-top{
+.scroll-top {
     opacity: 0;
     transform: translateY(-50px);
 }
 
-.scroll-bottom{
+.scroll-bottom {
     opacity: 0;
     transform: translateY(50px);
 }
 
-.scroll-scale{
+.scroll-scale {
     opacity: 0;
     transform: scale(.8);
 }
 
-.show-items{
+.show-items {
     opacity: 3;
     transform: translateX(0);
     transform: translateY(0);
@@ -436,79 +441,91 @@ header.sticky{
 }
 
 /* key frames */
-@keyframes rotate{
-    from{
+@keyframes rotate {
+    from {
         transform: rotate(0deg);
     }
-    to{
+
+    to {
         transform: rotate(360deg);
     }
 }
-@keyframes floatImg{
-    0%{
+
+@keyframes floatImg {
+    0% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(-14px);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
 
-@keyframes circleAnimate{
-    100%{
+@keyframes circleAnimate {
+    100% {
         opacity: 0;
         transform: scale(2);
     }
 }
 
 /* media requires */
-@media(max-width:1200px){
-    html{
+@media(max-width:1200px) {
+    html {
         font-size: 95%;
     }
-    navlist li{
+
+    navlist li {
         margin: 0 1.2rem;
     }
 }
 
-@media(max-width:991px){
-    header, header.sticky{
+@media(max-width:991px) {
+
+    header,
+    header.sticky {
         padding: 12px 3%;
     }
-    .navlist li .nav-item{
+
+    .navlist li .nav-item {
         padding: 23px 0;
     }
-    .flight-list .container{
+
+    .flight-list .container {
         margin-top: 0;
     }
-    section{
+
+    section {
         padding: 50px 3%;
     }
 
-    .container-foot{
+    .container-foot {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
     }
 
-    footer , .copyRight{
+    footer,
+    .copyRight {
         padding: 2rem 3%;
     }
-    .mission-history ,
-    .experience{
+
+    .mission-history,
+    .experience {
         flex-direction: column;
         height: 100%;
     }
 }
 
-@media(max-width:768px){
-    #menu-icon{
+@media(max-width:768px) {
+    #menu-icon {
         display: block;
         margin-left: .7rem;
     }
 
-    .navlist{
+    .navlist {
         position: absolue;
         top: -1000px;
         right: 0;
@@ -519,39 +536,44 @@ header.sticky{
         transition: all .7s ease;
     }
 
-    .open{
+    .open {
         top: 100%;
     }
-    .navlist li{
+
+    .navlist li {
         padding: 1.2rem;
         width: 100%;
         text-align: center;
     }
-    .navlist li .nav-item{
+
+    .navlist li .nav-item {
         padding: 5px 0;
         font-size: 1.4rem;
     }
-    .home{
+
+    .home {
         display: grid;
         grid-template-columns: 1fr;
     }
-    .earth-rote img.earth{
+
+    .earth-rote img.earth {
         animation: none;
     }
-    .container-foot{
+
+    .container-foot {
         display: grid;
         grid-template-columns: 1fr;
     }
 }
 
-@media(max-width:503px){
-    .copyRight{
+@media(max-width:503px) {
+    .copyRight {
         display: block;
         text-align: center;
     }
 
-    .copyRight a{
-        margin-bottom: 1rem;
+    .copyRight a {
+        margin-bottom: 1rem;
     }
 
 }
